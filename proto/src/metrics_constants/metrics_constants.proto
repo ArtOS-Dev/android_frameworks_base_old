@@ -7421,5 +7421,8 @@ message MetricsEvent {
     // ArtStarOS Proto
     ARTSTAR_SETTINGS = 1999;
 
+    // CustomSettings constant
+    CUSTOM_SETTINGS = 1999;
+
   }
 }
