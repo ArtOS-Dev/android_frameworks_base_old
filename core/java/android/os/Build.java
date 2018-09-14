@@ -1002,6 +1002,19 @@ public class Build {
     public static final String FINGERPRINT = deriveFingerprint();
 
     /**
+     * ArtStarOS fingerprint
+     * @hide
+     */
+    public static final String PROP_ARTSTAR_FINGERPRINT = "ro.artstar.fingerprint";
+
+    /**
+     * ArtStarOS fingerprint
+     * @hide
+     */
+    public static final String ARTSTAR_FINGERPRINT = SystemProperties.get(PROP_ARTSTAR_FINGERPRINT,
+            deriveFingerprint());
+
+    /**
      * Some devices split the fingerprint components between multiple
      * partitions, so we might derive the fingerprint at runtime.
      */
